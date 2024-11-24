@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medizo | Hope of Healthy Life</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/media/images/Logo.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/Tablet.css">
+
+</head>
+
+<body>
+
+
+
+
+    <!------------------ DESTOP-NAVBAR ------------>
+    <nav class="Desktop_nav">
+        <div class="logo">
+            <img src="../assets/media/images/Logo.png" alt="">
+        </div>
+        <div class="nav_links">
+            <ul>
+                <li><a href="index.html" class="active_nav">Home</a></li>
+                <li><a href="../html/About.html">About</a></li>
+                <div class="dropdown_menu">
+                    <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown_menu-content">
+                        <ul>
+                            <li><a href="../html/signin.html">Sign in</a></li>
+                            <li><a href="../html/signup.html">Sign Up</a></li>
+                            <li><a href="../html/TermsAndConditions.html">Terms & Conditions</a></li>
+                            <li><a href="../html/privacyPolicy.html">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <li><a href="../html/doctors.html">Doctors</a></li>
+                <li><a href="../html/services.html">Services</a></li>
+                <li><a href="../html/blog.html">Blog</a></li>
+                <li><a href="../html/shop.html" >Shop</a></li>
+                <li><a href="../html/contactus.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav_icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+
+
+
+
+    <!------------------ MOBILE-NAVBAR ------------>
+    <nav class="mobile-nav">
+        <img src="../assets/media/images/Logo.png" alt="">
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav_items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../html/About.html" class="active_nav">About</a></li>
+            <div class="dropdown_menu">
+                <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown_menu-content">
+                    <ul>
+                        <li><a href="../html/signin.html">Sign in</a></li>
+                        <li><a href="../html/signup.html">Sign Up</a></li>
+                        <li><a href="../html/TermsAndConditions.html">Terms & Conditions</a></li>
+                        <li><a href="../html/privacyPolicy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <li><a href="../html/doctors.html">Doctors</a></li>
+            <li><a href="../html/services.html">Services</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li><a href="../html/contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!------Header_BANNER ------->
+    <div class="header_background">
+        <div class="overlay">
+
+        </div>
+
+        <div class="Header_banner">
+            <div class="Header_text">
+                <h3>The Home of Your Hope</h3>
+                <h1>Our Priority is to <br> Ensure the Good <br> Health of Patients</h1>
+                <p>Get your appointment through online and remain safe <br> at your home. Because your safety is our
+                    first
+                    priority.</p>
+                <button class="Header_button"><a href="">Request Appointement</a></button>
+            </div>
+            <div class="Header_form">
+                <form action="">
+                    <div class="From_heading">
+                        <h1>Get Your Appointment</h1>
+                        <p>Online Easily During This Corona Pandemic</p>
+                    </div>
+                    <div class="select_option_div">
+                        <select name="" id="" class="select_option_col">
+                            <option value="1">Select Departments</option>
+                            <option value="2">Dental Care</option>
+                            <option value="3">Cardiology</option>
+                            <option value="4">Neurology</option>
+                            <option value="5">Medicine</option>
+                        </select>
+                    </div>
+
+                    <div class="select_option_div">
+                        <select name="" id="" class="select_option_col">
+                            <option value="1">Select Doctor</option>
+                            <option value="2">Dr. James Adult</option>
+                            <option value="3">Dr. James Alison</option>
+                            <option value="4">Dr. Peter Adlock</option>
+                            <option value="5">Dr. Jelin Alis</option>
+                            <option value="6">Dr. Josh Taylor</option>
+                        </select>
+                    </div>
+                    <div class="select_option_div">
+                        <select name="" id="" class="select_option_col">
+                            <option value="1">Select Specialist</option>
+                            <option value="2">Cardiologists</option>
+                            <option value="3">Dermatologists</option>
+                            <option value="4">Gastroenterologists</option>
+                            <option value="5">Immunologists</option>
+                        </select>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" class="Header_input" placeholder="Name">
+                        <input type="email" class="Header_input" placeholder="Email">
+                    </div>
+
+                    <div class="select_option_div">
+                       <input type="date" placeholder="Select Time" class="date_input">
+                    </div>
+
+                    <div class="Header_form_button">
+                        <button class="form_button"><a href="">Book An Appointement</a></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!------------ ABOUT US ------------>
+
+    <div class="Aboutus_section">
+
+        <div class="Aboutus_text">
+            <h5>About us</h5>
+            <h2>We Are Your Trusted Friend</h2>
+            <p>Medizo is a trusted name of Medical Services who is always at your side and your health is our first
+                priority.</p>
+
+            <p>Medizo Care will be administered through plan-based customizable programs that incorporate partnership
+                between family members and the care givers for long term illness or disease management.</p>
+
+            <div class="support">
+                <div class="icons">
+                    <i class="fa-solid fa-hospital"></i>
+                </div>
+
+                <div class="">
+                    <h4>24/7 Support</h4>
+                    <p>Our medical team of different department for long term illness writers and editors makes all the
+                    </p>
+                </div>
+            </div>
+
+            <div class="Emergency_Support">
+                <div class="icons">
+                    <i class="fa-solid fa-truck-medical"></i>
+                </div>
+
+                <div class="">
+                    <h4>Emergency Support</h4>
+                    <p>Our medical team of different department for long term illness writers and editors makes all the
+                    </p>
+                </div>
+            </div>
+
+            <div class="AboutUs_button">
+                <button><a href="">Explore More</a></button>
+            </div>
+        </div>
+
+        <div class="Aboutus_image">
+            <img src="assets/media/images/aboutus_image.jpg" alt="" width="85%">
+        </div>
+
+        <div class="open_hours_div">
+            <div class="open_hours_div_heading">
+                <h3>Open Hours</h3>
+            </div>
+
+            <div class="open_hours_weeks_and_time">
+                <div class="days">
+                    <h5>Monday</h5>
+                    <h5>Monday</h5>
+                    <h5>Monday</h5>
+                    <h5>Monday</h5>
+                    <h5>Monday</h5>
+                    <h5>Monday</h5>
+                    <h5>Monday</h5>
+                </div>
+
+                <div class="Time">
+                    <h5>8:00 am - 9:30 pm</h5>
+                    <h5>8:00 am - 9:30 pm</h5>
+                    <h5>8:00 am - 9:30 pm</h5>
+                    <h5>8:00 am - 9:30 pm</h5>
+                    <h5>8:00 am - 9:30 pm</h5>
+                    <h5>8:00 am - 9:30 pm</h5>
+                    <h5>8:00 am - 9:30 pm</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel images -->
+    <div class="scroll_images">
+        <marquee scrollamount="14">
+            <img src="assets/media/images/carousle-image-1.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-2.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-3.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-4.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-5.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-6.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-7.png" class="scroll_image_1" alt="">
+            <img src="assets/media/images/carousle-image-3.png" class="scroll_image_1" alt="">
+        </marquee>
+    </div>
+
+
+    <!-- Services That We Provide -->
+
+    <div class="Services_section">
+        <div class="Services_section_heading">
+            <h1>Services That We Provide</h1><br>
+            <small>We provide excellent services for your ultimate good health. Here some of the services are <br>
+                included
+                for
+                your better understand that we are always at your side.</small>
+        </div>
+
+        <div class="Services_section_boxes">
+            <div class="services_box1">
+                <div class="services_icon">
+                    <i class="fa-solid fa-calculator"></i>
+                   
+                </div>
+
+                <h3>Medical Counselling</h3>
+                <p>We provide wide range of medical counselling by the professional doctor & therapist.
+
+                    Images</p>
+            </div>
+
+            <div class="services_box1">
+                <div class="services_icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+
+                <h3>Laboratory Test</h3>
+                <p>We provide wide range of medical counselling by the professional doctor & therapist.
+
+                    Images</p>
+            </div>
+
+            <div class="services_box1">
+                <div class="services_icon">
+                    <i class="fa-solid fa-user-nurse"></i>
+                </div>
+
+                <h3>Surgical Operation</h3>
+                <p>We provide wide range of medical counselling by the professional doctor & therapist.
+
+                    Images</p>
+            </div>
+
+
+            <div class="services_box1">
+                <div class="services_icon">
+                    <i class="fa-solid fa-notes-medical"></i>
+                </div>
+
+                <h3>Medical Treatment</h3>
+                <p>We provide wide range of medical counselling by the professional doctor & therapist.
+
+                    Images</p>
+            </div>
+
+
+            <div class="services_box1">
+                <div class="services_icon">
+                    <i class="fa-solid fa-prescription-bottle-medical"></i>
+                </div>
+
+                <h3>Pharmacy Service</h3>
+                <p>We provide wide range of medical counselling by the professional doctor & therapist.
+
+                    Images</p>
+            </div>
+
+
+            <div class="services_box1">
+                <div class="services_icon">
+                    <i class="fa-solid fa-truck-medical"></i>
+                </div>
+
+                <h3>Emergency Services</h3>
+                <p>We provide wide range of medical counselling by the professional doctor & therapist.
+
+                    Images</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Give Prescription Get Medicine -->
+    <div class="Get_Medicine_section">
+        <div class="Get_Medicine_section_text">
+            <h2>Give Prescription Get Medicine</h2>
+            <p>Give your prescription online and get the medicine at your door at this corona pandemic. Stay home
+                Stay Safe.</p>
+
+            <div class="Get_Medicine_section_button">
+                <button><a href="">Upload Prescription</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Visit Our Online Pharmacy -->
+    <div class="Online_Pharmacy_section">
+        <div class="Online_Pharmacy_heading">
+            <h1>Visit Our Online Pharmacy</h1>
+        </div>
+        <div class="Online_Pharmacy">
+            <div class="Online_Pharmacy_images">
+                <img src="assets/media/images/Online_Pharmacy_image_1.png" alt="">
+                <div class="Online_Pharmacy_text">
+                    <div>
+                        <h6>Care, Health</h6>
+                        <h5>Remdesivir</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><br>
+                        <button class="Add_to_cart_button"><a href="">Add to cart</a></button>
+                    </div>
+
+                    <div>
+                        <h6><strike>$450</strike> </h6>
+                        <h4>$300</h4><br>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Online_Pharmacy_images">
+                <img src="assets/media/images/Online_Pharmacy_image_2.png" alt="">
+
+                <div class="Online_Pharmacy_text">
+                    <div>
+                        <h6>Care, Health</h6>
+                        <h4>Remdesivir</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><br>
+                        <button class="Add_to_cart_button"><a href="">Add to cart</a></button>
+                    </div>
+
+                    <div>
+                        <h6><strike>$450</strike> </h6>
+                        <h4>$300</h4><br>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Online_Pharmacy_images">
+                <img src="assets/media/images/Online_Pharmacy_image_3.png" alt="">
+                <div class="Online_Pharmacy_text">
+                    <div>
+                        <h6>Care, Health</h6>
+                        <h4>Remdesivir</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><br>
+                        <button class="Add_to_cart_button"><a href="">Add to cart</a></button>
+                    </div>
+
+                    <div>
+                        <h6><strike>$450</strike> </h6>
+                        <h4>$300</h4><br>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Online_Pharmacy_images">
+                <img src="assets/media/images/Online_Pharmacy_image_4.png" alt="">
+                <div class="Online_Pharmacy_text">
+                    <div>
+                        <h6>Care, Health</h6>
+                        <h4>Remdesivir</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><br>
+                        <button class="Add_to_cart_button"><a href="">Add to cart</a></button>
+                    </div>
+
+                    <div>
+                        <h6><strike>$450</strike> </h6>
+                        <h4>$300</h4><br>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Health Insurance -->
+    <div class="Get_Medicine_section">
+        <div class="Get_Medicine_section_text">
+            <h2>Get Online Health Insurance</h2>
+            <p>Apply for Insurance online during this Corona Pandemic and secure your health. We are taking all
+                documents in online.</p>
+
+            <div class="Get_Medicine_section_button">
+                <button><a href="">Apply for insurance</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Our News & Update section -->
+
+    <div class="our_news_section">
+        <div class="our_news_section_heading">
+            <h1>Our News & Updates</h1><br>
+            <small>We provide excellent services for your ultimate good health. Here some of the services are <br>
+                included for your better understand that we are always at your side.</small>
+        </div>
+
+        <div class="our_news_section_images">
+            <div class="our_news_section_image">
+                <img src="assets/media/images/our_news_image-1.jpg" alt="">
+                <div class="our_news_section_text">
+                    <h4>Lockdowns Leads to Fewer Peo - Ple Seeking Medical Care</h4>
+                </div>
+            </div>
+
+            <div class="our_news_section_image">
+                <img src="assets/media/images/our_news_image-2.jpg" alt="">
+                <div class="our_news_section_text">
+                    <h4>Emergency Medicine Resea - rch Course for the Doctors</h4>
+                </div>
+            </div>
+
+            <div class="our_news_section_image">
+                <img src="assets/media/images/our_news_image-3.jpg" alt="">
+                <div class="our_news_section_text">
+                    <h4>Advance Care Planning Information Session - 2024</h4>
+                </div>
+            </div>
+        </div>
+        <div class="explore_more_button">
+            <button><a href="">Explore More</a></button>
+        </div>
+    </div>
+
+
+
+    <!-------------------------- FAQ -------------------------->
+
+    <div class="Faq_section">
+        <div class="Faq_text">
+            <h5>FAQ</h5>
+            <h2>Get Answers Of Your Every <br> Single Question</h2>
+            <div class="faq_question">
+                <h4>Do we have any International Accreditation ? <i class="fa-sharp fa-solid fa-angle-down"></i>
+                    <h4>
+                        <h4>Do we have any International Accreditation ? <i class="fa-sharp fa-solid fa-angle-down"></i>
+                        </h4>
+
+                        <h4>Do we have any International Accreditation ? <i class="fa-sharp fa-solid fa-angle-down"></i>
+                            <h4>
+
+                                <h4>Do we have any International Accreditation ? <i
+                                        class="fa-sharp fa-solid fa-angle-down"></i>
+                                    <h4>
+
+                                        <h4>Do we have any International Accreditation ? <i
+                                                class="fa-sharp fa-solid fa-angle-down"></i>
+                                            <h4>
+            </div>
+        </div>
+
+
+        <div class="Fqa_boxes">
+            <div>
+                <div class="Faq_box1">
+                    <h2>2000+</h2>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="Faq_box2">
+                    <h2>150+
+                    </h2>
+                    <p>Medical Experts</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="Faq_box3">
+                    <h2>500+
+                    </h2>
+                    <p>Medical Beds</p>
+                </div>
+
+                <div class="Faq_box4">
+                    <h2>25+
+                    </h2>
+                    <p>Years Of Experience</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Meet Our Experts -->
+    <div class="Experst_section">
+        <div class="Experst_section_heading">
+            <h1>Meet Our Experts</h1><br>
+            <p>We provide excellent services for your ultimate good health. Here some of the services are included
+                <br>for your better understand that we are always at your side.
+            </p>
+        </div>
+        <div class="Experst_section_images">
+            <div class="Expert_image-1">
+                <img src="assets/media/images/our_experts_image-1.png" alt="">
+                <div class="Expert_Names">
+                    <h3>Dr. James Alison</h3>
+                    <h4>Neueoligist</h4>
+                </div>
+            </div>
+
+            <div class="Expert_image-1">
+                <img src="assets/media/images/our_experts_image-2.png" alt="">
+
+                <div class="Expert_Names">
+                    <h3>Dr. James Alison</h3>
+                    <h4>Neueoligist</h4>
+                </div>
+
+            </div>
+
+            <div class="Expert_image-1">
+                <img src="assets/media/images/our_experts_image-3.png" alt="">
+
+                <div class="Expert_Names">
+                    <h3>Dr. James Alison</h3>
+                    <h4>Neueoligist</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Subscribe Our Newsletter -->
+    <div class="Our_Newsletter_section">
+        <div class="Our_Newsletter_section_text">
+            <h1>Subscribe Our Newsletter</h1>
+            <p>We are always at your side. We are 24 hours avail- able for you <br> in emergency situation.</p>
+
+            <div class="Our_Newsletter_section_input">
+                <input type="text" name="" id="" placeholder="Enter your Email Address">
+                <button><a href="">Subscribe</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------- FOOTER ----------------------->
+
+    <div class="Footer">
+        <div class="Fotter_div1">
+            <img src="assets/media/images/Logo.png" alt="">
+            <small>Grursus mal suada faci Lorem to the ipsum dolarorit more ame tion more consectetu.</small>
+            <div class="social_media_icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHMz7ZuyxLimgAAAZGCwKVIJWILmtbSOg5Gt34tLhMwyAfNAc4o1CivpJk7NUpUiltehxlGT5bG2LnMXjmVmIT0dUUVVX8Wa4-qqiXq5zXWaE5_Ex5ab8hY0mafnrWL1UV9LDU=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Frebbas-pavan-kumar-3b2552263%2F"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://in.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="Fotter_div1">
+            <h3>Important Link</h3>
+
+            <ul class="footer_navLinks">
+                <li><a href="index.html" class="active_nav"><i class="fa-solid fa-caret-right"></i> Home</a></li>
+                <li><a href="html/About.html"><i class="fa-solid fa-caret-right"></i> About</a></li>
+                <!-- <li><a href="html/pages.html"><i class="fa-solid fa-caret-right"></i> Pages</a></li> -->
+                <li><a href="html/doctors.html"><i class="fa-solid fa-caret-right"></i> Doctors</a></li>
+                <li><a href="html/services.html"><i class="fa-solid fa-caret-right"></i> Services</a></li>
+                <li><a href="html/blog.html"><i class="fa-solid fa-caret-right"></i> Blog</a></li>
+                <li><a href="html/shop.html"><i class="fa-solid fa-caret-right"></i> Shop</a></li>
+                <li><a href="html/contactus.html"><i class="fa-solid fa-caret-right"></i> Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="Fotter_div1">
+            <h3>Open Hours</h3>
+            <ul>
+                <li><a href=""> Monday</a></li>
+                <li><a href=""> Tuesday</a></li>
+                <li><a href=""> Wednesday</a></li>
+                <li><a href=""> Thursday</a></li>
+                <li><a href=""> Friday</a></li>
+                <li><a href=""> Saturday</a></li>
+                <li><a href=""> Sunday</a></li>
+            </ul>
+        </div>
+
+        <div class="Fotter_div1" style="margin-top: 30px;">
+            <ul>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+                <li><a href="">8:00 am - 9:30 pm</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="Fotter_div1">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><a href=""> Grursus mal suada faci Lorem to the ipsum dolarorit.</a></li>
+                <li><a href=""><i class="fa-solid fa-location-dot"></i> 123 William St Suite 801, New York, USA</a></li>
+                <li><a href=""><i class="fa-solid fa-phone"></i> +001-548-159-2491
+                        +001-548-159-2492</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i> hello@medizo.com</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="copyright">
+        <p>Copyright ©2024 Medizo.</p>
+    </div>
+</body>
+
+</html>

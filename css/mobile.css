@@ -1,0 +1,369 @@
+@media only screen and (min-width: 360px) and (max-width:640px) {
+
+
+
+    /*********************DESKTOP NAVBAR *********************/
+    .Desktop_nav {
+        display: none;
+    }
+
+
+
+
+    /*********************MOBILE  NAVBAR *********************/
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0px;
+        z-index: 999;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+    }
+
+
+    #check {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        position: fixed;
+        background-color: white;
+        top: 81px;
+        left: 100%;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        line-height: 45px;
+
+    }
+
+    .mobile-nav>ul>li>a {
+
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+    }
+
+
+    #check:checked~.nav_items {
+        left: 0;
+    }
+
+
+
+
+
+
+    /* header_background  */
+    .header_background {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUvI1m8C6cWfWFSGMMpYjgh9q75RjAyRH0w&s");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+
+
+    .Header_banner {
+        display: grid;
+        grid-template-columns: 100%;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* background-color: black; */
+        color: white;
+        padding: 40px 0px;
+        place-items: center;
+        line-height: 45px;
+
+    }
+
+    .Header_banner>.Header_text {
+        text-align: center;
+        padding: 10px;
+        margin-top: 4em;
+    }
+
+    .Header_banner>.Header_form {
+
+        background-color: white;
+        color: #000;
+        width: 50%;
+        display: grid;
+        align-items: center;
+        /* justify-content: center; */
+        margin-top: 50px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .inputs>.Header_input {
+        border: none;
+        background-color: #a5d5f850;
+        padding: 10px 0px;
+        width: 100%;
+        margin: 10px 0px;
+
+    }
+
+
+
+    /******************* Aboutus_section *******************/
+    .Aboutus_section {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 40px 0px;
+        place-items: center;
+    }
+
+    .Aboutus_text {
+        display: grid;
+        align-items: center;
+        padding: 10px 13px;
+        /* width: 80%; */
+    }
+
+
+    .Aboutus_image {
+        background-color: white;
+        color: #000;
+        display: grid;
+        align-items: center;
+        place-items: center;
+        position: relative;
+    }
+
+    .open_hours_div {
+        display: none;
+    }
+
+
+
+
+    /* services_section */
+    .Services_section_boxes {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        place-items: center;
+    }
+
+
+    /**************** Online_Pharmacy_section ****************/
+    .Online_Pharmacy {
+
+        display: grid;
+        grid-template-columns: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+    /****************** our_news_section ******************/
+
+    .our_news_section_images {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        margin: 35px 0px;
+    }
+
+
+
+
+    /************** Faq_section **************/
+
+    .Faq_section {
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 40px 0px;
+        align-items: center;
+
+    }
+
+
+
+
+    /* EXPERT IMAGE SECTION */
+    .Experst_section_images {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+
+
+
+    /******************** Footer ********************/
+    .Footer {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        /* margin: 40px 0px; */
+        gap: 25px;
+        line-height: 33px;
+        padding: 80px 0px;
+        /* margin-top: 50px; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*********************************************************************
+               ABOUTUS PAGE CSS
+    /**********************************************************************/
+
+    /* AboutUs_Emergency_care */
+    .AboutUs_Emergency_care_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 80px 0px;
+    }
+
+    .AboutUs_Emergency_care_section_divs {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, #002F79, #4282ea);
+        border-radius: 0px;
+        padding: 20px 0px;
+        gap: 10px;
+    }
+
+    .AboutUs_Emergency_care_image {
+        margin-top: 20px;
+    }
+
+    .AboutUs_Emergency_care_image>img {
+        width: 100%;
+    }
+
+
+
+    /*********************************************************************
+               DOCTORS PAGE CSS
+    /**********************************************************************/
+    .doctor_image {
+        display: none;
+    }
+
+
+
+    /*********************************************************************
+               CONTACT PAGE CSS
+/**********************************************************************/
+    .contact_form {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        /* align-items: center; */
+        padding: 10% 0%;
+        gap: 15px;
+    }
+
+    .Get_in_touch {
+        margin-left: 0px;
+    }
+
+    .contact_form>.Get_in_touch>.contactus_Desktop_textarea {
+        display: none;
+    }
+
+
+    .contact_form>.Get_in_touch>.contactus_Mobile_textarea {
+        display: block;
+    }
+
+
+
+
+    /*********************************************************************
+               SHOP PAGE CSS
+/**********************************************************************/
+    .shop_menu_header {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 0em;
+    }
+
+    .shop_menu_search {
+        margin-left: 0;
+        margin: 10px 0px;
+    }
+
+    .shop_menu_search>.search_bar,
+    .select_options {
+        width: 100%;
+        margin: 10px 0px;
+
+    }
+
+
+    .best_selling_products_section>.best_selling_products {
+        display: grid;
+        grid-template-columns: 40% 40%;
+
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
+
+
+    /*********************************************************************
+               TERMS AND CONDITIONS PAGE CSS
+/**********************************************************************/
+
+    .Terms_and_conditions_section_image>img {
+        width: 90%;
+        margin: 30px 0px;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /*********************************************************************
+               SIGN IN & UP PAGE CSS
+/**********************************************************************/
+
+    /* .Sign_in {
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2em;
+    } */
+
+}

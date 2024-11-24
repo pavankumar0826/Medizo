@@ -1,0 +1,1291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/****************** MOBILE NAVBAR ******************/
+.mobile-nav {
+    display: none;
+}
+
+
+
+/***************** Desktop_nav *****************/
+.Desktop_nav {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/***************************** DROPDOWN_MENU *****************************/
+.dropdown_menu {
+    position: relative;
+}
+
+.dropdown_menu>a {
+    color: black;
+    text-decoration: none;
+    font-weight: 350;
+}
+
+.dropdown_menu-content {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    min-width: 200px;
+    /* padding: 10px 0px; */
+    background-color: white;
+    z-index: 999;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.dropdown_menu-content>ul {
+    list-style: none;
+    padding: 15px 0px;
+}
+
+.dropdown_menu-content>ul>li {
+
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0px;
+}
+
+.dropdown_menu-content>ul>li>a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdown_menu-content>ul>li:hover{
+    background-color: #1FA2FF;
+}
+
+.dropdown_menu-content>ul>li>a:hover {
+    color: #fff;
+
+}
+
+
+.dropdown_menu-content:hover {
+    transform: translateY(20px);
+}
+
+.dropdown_menu:hover .dropdown_menu-content {
+    display: block;
+    opacity: 1;
+}
+
+
+
+.Desktop_nav>.nav_links>ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Desktop_nav>.nav_links>ul>li {
+
+    list-style: none;
+    /* padding: 0px 10px; */
+
+}
+
+.Desktop_nav>.nav_links>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 350;
+    transition: all 0.3s ease-in-out;
+}
+
+.Desktop_nav>.nav_links>ul>li>.active_nav {
+    color: #1fa2ff;
+}
+
+.Desktop_nav>.nav_links>ul>li>a:hover {
+    color: #1fa2ff;
+}
+
+.Desktop_nav>.nav_icons>i {
+    padding: 0px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Desktop_nav>.nav_icons>i:hover{
+    color: #1FA2FF;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/***************************************************************
+               INDEX PAGE CSS
+/****************************************************************/
+
+
+
+/******************* Header_banner  *******************/
+
+.header_background {
+    background-image: url("../assets/media/images/Header-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.Header_banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: black; */
+    color: white;
+    padding: 40px 0px;
+    place-items: center;
+    line-height: 45px;
+
+}
+
+.Header_banner>.Header_text>h3 {
+    color: #1fa2ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Header_banner>.Header_text>h1 {
+
+    font-size: 46px;
+    line-height: 1.2em;
+}
+
+.Header_banner>.Header_text>p {
+    line-height: 28px;
+    margin: 10px 0px;
+}
+
+
+.Header_text>.Header_button {
+    background-color: #1fa2ff;
+    border: none;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Header_text>.Header_button>a {
+    text-decoration: none;
+    color: white;
+}
+
+.Header_text>.Header_button:hover {
+    background-color: black;
+}
+
+
+.Header_banner>.Header_form {
+
+    /* display: grid; */
+    /* justify-content: center; */
+    background-color: white;
+    color: #000;
+    width: 70%;
+    display: grid;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding: 10px 13px;
+    margin-top: 15%;
+}
+
+.From_heading {
+    text-align: center;
+}
+
+.select_option_div>.select_option_col {
+    width: 100%;
+    margin: 14px 0px;
+    border: none;
+    background-color: #a5d5f850;
+    padding: 15px 0px;
+}
+
+.inputs>.Header_input {
+    border: none;
+    background-color: #a5d5f850;
+    padding: 15px 10px;
+    margin: 14px 0px;
+
+}
+
+.date_input
+{
+    border: none;
+    width: 100%;
+    background-color: #a5d5f850;
+    padding: 15px 4px;
+}
+
+.Header_form_button>.form_button {
+
+    width: 100%;
+    background-color: #1fa2ff;
+    padding: 15px 0px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.Header_form_button>.form_button>a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.Header_form_button>.form_button:hover {
+
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+
+/******************* Aboutus_section *******************/
+.Aboutus_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: black; */
+    padding: 40px 0px;
+    place-items: center;
+}
+
+.Aboutus_text {
+    display: grid;
+    align-items: center;
+    padding: 10px 13px;
+    width: 70%;
+    line-height: 35px;
+}
+
+
+.Aboutus_image {
+    background-color: white;
+    color: #000;
+    display: grid;
+    align-items: center;
+}
+
+.Aboutus_text>.support {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+.Aboutus_text>.Emergency_Support {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+.support>.icons {
+    background-color: #16213e;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.Emergency_Support>.icons {
+    background-color: #16213e;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.Aboutus_text>h5 {
+    color: #1fa2ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Aboutus_text>.AboutUs_button>button {
+    background-color: #1fa2ff;
+    border: none;
+    padding: 15px;
+    margin: 15px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Aboutus_text>.AboutUs_button>button>a {
+    text-decoration: none;
+    color: white;
+}
+
+.Aboutus_text>.AboutUs_button>button:hover {
+    background-color: #000;
+}
+
+
+.open_hours_div {
+    background-color: #16213e;
+    color: white;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: -700px;
+    left: 690px;
+    /* position: fixed; */
+    display: none;
+}
+
+.open_hours_div_heading {
+    text-align: center;
+}
+
+.Aboutus_section>.open_hours_div>.open_hours_weeks_and_time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 33px;
+    gap: 30px;
+}
+
+
+
+/*************** scroll_images ***************/
+
+.scroll_images {
+    background-color: #16213e;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.scroll_image_1 {
+    padding: 0px 20px;
+}
+
+
+
+
+/*************** Services_section ***************/
+
+.Services_section {
+    margin: 60px 0px;
+}
+
+.Services_section>.Services_section_heading {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.Services_section_boxes {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+}
+
+.Services_section_boxes>.services_box1 {
+    line-height: 35px;
+    gap: 5px;
+    margin: 30px 0px;
+    place-items: center;
+    display: grid;
+    align-items: center;
+    padding: 20px 13px;
+    width: 80%;
+    line-height: 35px;
+}
+
+.services_box1 {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.services_box1>.services_icon {
+    background-color: #1fa2ff;
+    padding: 20px 30px;
+    border-radius: 50px;
+    color: white;
+}
+
+.services_icon>i {
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.services_box1:hover .services_icon>i{
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+
+
+
+/***************** Get_Medicine_section *****************/
+
+.Get_Medicine_section {
+    background-image: url("../assets/media/images/Header-banner.jpg");
+    /* background-image: linear-gradient(to right, #002F79, rgba(0, 47, 121, 0.3294117647)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 40px 0px;
+    width: 100%;
+    color: white;
+    display: grid;
+    /* text-align: center; */
+
+}
+
+.Get_Medicine_section_text {
+    line-height: 50px;
+    padding: 50px 40px;
+
+}
+
+.Get_Medicine_section_text>h2 {
+
+    font-size: 35px;
+}
+
+.Get_Medicine_section_button>button {
+    background-color: #1fa2ff;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Get_Medicine_section_button>button:hover {
+    background-color: #000001;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+.Get_Medicine_section_button>button>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/**************** Online_Pharmacy_section ****************/
+
+.Online_Pharmacy_section {
+    /* background-image: url("../assets/media/images/Online_Pharmacy_background.png"); */
+    margin: 60px 0px;
+}
+
+.Online_Pharmacy_section .Online_Pharmacy_heading {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.Online_Pharmacy {
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+.Online_Pharmacy .Online_Pharmacy_images>img {
+    width: 100%;
+}
+
+.Online_Pharmacy_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 33px;
+}
+
+.Add_to_cart_button {
+    background-color: #1fa2ff;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 12px 0px;
+}
+
+.Add_to_cart_button:hover {
+    background-color: #000001;
+    border: none;
+    padding: 10px 20px;
+}
+
+.Add_to_cart_button>a {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-heart {
+    background-color: #000001;
+    color: white;
+    padding: 10px 10px;
+    margin: 12px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-heart:hover {
+    background-color: #1fa2ff;
+    cursor: pointer;
+}
+
+.fa-star {
+    color: #ffc107;
+}
+
+
+
+/****************** our_news_section ******************/
+.our_news_section {
+    margin: 40px 0px;
+}
+
+.our_news_section .our_news_section_heading {
+    text-align: center;
+}
+
+.our_news_section_images {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin: 35px 0px;
+}
+
+.our_news_section_image img {
+    width: 100%;
+}
+
+.our_news_section_text {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px 5px;
+}
+
+.our_news_section_image {
+    transition: all 0.5s ease-in-out;
+    margin: 20px 0px;
+}
+
+.our_news_section_image:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.explore_more_button {
+    text-align: center;
+}
+
+.explore_more_button>button {
+    background-color: #1fa2ff;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 12px 0px;
+}
+
+.explore_more_button>button:hover {
+    background-color: #000001;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 12px 0px;
+}
+
+
+.explore_more_button>button>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/************** Faq_section **************/
+
+.Faq_section {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 40px 0px;
+    align-items: center;
+
+}
+
+.Faq_section .Faq_text {
+    line-height: 45px;
+}
+
+.Faq_section .Fqa_boxes {
+    background-color: #002e79ce;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.faq_question>h4 {
+    background-color: white;
+    margin: 10px 0px;
+    width: 80%;
+    padding: 0px 5px;
+}
+
+.faq_question>h4>i {
+    border: 1px solid #000001;
+    border-radius: 50px;
+    padding: 2px;
+    margin-left: 25px;
+}
+
+.Fqa_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    color: white;
+    margin: 25px 0px;
+}
+
+.Fqa_boxes .Faq_box1,
+.Faq_box2,
+.Faq_box3,
+.Faq_box4 {
+    background-image: linear-gradient(to right, #002F79, rgba(0, 47, 121, 0.3294117647));
+    padding: 50px;
+    border: 2px dashed white;
+}
+
+.Faq_box2 {
+    margin-top: 30px;
+}
+
+.Faq_box4 {
+    margin-top: 60px;
+}
+
+
+
+
+/******************** Experst_section ********************/
+
+.Experst_section {
+    margin: 40px 0px;
+}
+
+.Experst_section .Experst_section_heading {
+    text-align: center;
+}
+
+.Experst_section_images {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    gap: 40px;
+}
+
+
+.Expert_image-1 img {
+    width: 94.1%;
+    background-image: linear-gradient(#1FA2FF, #00EBBA);
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.Expert_image-1 {
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* padding: 10px 0px; */
+}
+
+.Expert_image-1:hover {
+    transform: translateY(5px);
+    cursor: pointer;
+
+}
+
+
+.Expert_image-1>.Expert_Names {
+    padding: 10px 10px;
+}
+
+.Expert_text {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 90%;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+/*************8 Subscribe Our Newsletter ************8*/
+
+.Our_Newsletter_section {
+    background-image: url("../assets/media/images/Header-banner.jpg");
+    /* background-image: linear-gradient(to right, #002F79, rgba(0, 47, 121, 0.3294117647)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin: 40px 0px; */
+    padding: 10px 0px;
+    width: 100%;
+    color: white;
+
+}
+
+
+.Our_Newsletter_section_text {
+    text-align: center;
+    padding: 80px 0px;
+    line-height: 40px;
+}
+
+.Our_Newsletter_section_input>input,
+button {
+
+    border: none;
+    padding: 15px 40px;
+    margin-top: 20px;
+
+}
+
+.Our_Newsletter_section_input>button {
+    background-color: #1FA2FF;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.Our_Newsletter_section_input>button:hover {
+    background-color: #000001;
+
+}
+
+.Our_Newsletter_section_input>button>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.fa-location-dot,
+.fa-phone,
+.fa-envelope {
+    color: #1FA2FF;
+    font-size: 17px;
+}
+
+
+
+
+/******************** Footer ********************/
+.Footer {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16%;
+    justify-content: center;
+    /* margin: 40px 0px; */
+    gap: 25px;
+    line-height: 33px;
+    padding: 5% 0%;
+    /* margin-top: 50px; */
+    background-image: url("../assets/media/images/footer_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Footer .Fotter_div1>h3 {
+    color: #16213e;
+}
+
+.Footer .Fotter_div1 ul {
+
+    list-style: none;
+}
+
+.Footer .Fotter_div1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.Footer .Fotter_div1 .footer_navLinks>li>a {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.Footer .Fotter_div1 .footer_navLinks>li>a:hover {
+
+    color: #1FA2FF;
+}
+
+.copyright>p {
+    background-color: #efefef;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.social_media_icons>a>i {
+    padding: 8px 8px;
+    background-color: #1fa2ff;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.social_media_icons>a>i:hover {
+    transform: rotate(-50deg) scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*********************************************************************
+               ABOUTUS PAGE CSS
+/**********************************************************************/
+.About_Header {
+    background-image: linear-gradient(to right, #002F79, #4282ea);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    padding: 130px 0px;
+    text-align: center;
+    color: white;
+}
+
+.About_Header>h1 {
+    font-size: 40px;
+}
+
+.About_Header>a {
+    color: white;
+    text-decoration: none;
+}
+
+.About_Header>.home_link:hover {
+    color: #1FA2FF;
+}
+
+
+/* AboutUs_Emergency_care */
+.AboutUs_Emergency_care_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 80px 0px;
+}
+
+.AboutUs_Emergency_care_section_divs {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #002F79, #4282ea);
+    border-radius: 20px;
+}
+
+.AboutUs_Emergency_care_image>img {
+    width: 70%;
+}
+
+.AboutUs_Emergency_care_text {
+    line-height: 44px;
+}
+
+
+
+
+
+/*********************************************************************
+               DOCTOR PAGE CSS
+/**********************************************************************/
+
+.Doctor_Header {
+    background-image: linear-gradient(to right, #002F79, #4282ea);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    padding: 130px 0px;
+    text-align: center;
+    color: white;
+}
+
+.Doctor_Header>h1 {
+    font-size: 40px;
+}
+
+.Doctor_Header>a {
+    color: white;
+    text-decoration: none;
+}
+
+.Doctor_Header>.home_link:hover {
+    color: #1FA2FF;
+}
+
+.Doctors_form {
+    background-image: linear-gradient(to right, #002F79, #4282ea);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Header_text>img {
+    width: 100%;
+}
+
+.Doctor_form {
+    background-color: white;
+    color: black;
+    padding: 20px 50px;
+    width: 70%;
+}
+
+
+
+
+/*********************************************************************
+    SERVICES PAGE CSS & BLOG PAGE & CONTACT US PAGE HEADERS & SHOP PAGE
+/**********************************************************************/
+.services_Header,
+.Blog_Header,
+.Contactus_Header,
+.Shop_Header {
+    background-image: linear-gradient(to right, #002F79, #4282ea);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    padding: 130px 0px;
+    text-align: center;
+    color: white;
+}
+
+.services_Header>h1,
+.Blog_Header>h1,
+.Contactus_Header>h1,
+.Shop_Header>h1 {
+    font-size: 40px;
+}
+
+.services_Header>a,
+.Blog_Header>a,
+.Contactus_Header>a,
+.Shop_Header>a {
+    color: white;
+    text-decoration: none;
+}
+
+.services_Header>.home_link:hover,
+.Blog_Header>.home_link:hover,
+.Contactus_Header>.home_link:hover,
+.Shop_Header>.home_link:hover {
+    color: #1FA2FF;
+}
+
+
+
+
+
+
+/*********************************************************************
+               CONTACT PAGE CSS
+/**********************************************************************/
+.contact_form {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0%;
+    /* gap: 15px; */
+}
+
+.contact_info {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 25px 10px;
+}
+
+.contact_info>ul {
+    list-style: none;
+}
+
+.contact_info>ul>li>a {
+    text-decoration: none;
+    color: black;
+    line-height: 43px;
+}
+
+.Get_in_touch {
+    margin-left: auto;
+}
+
+.contact_form>.Get_in_touch>.contactus_Mobile_textarea {
+    display: none;
+}
+
+.contact_form>.Get_in_touch>input {
+    border: none;
+    background-color: #f9f9f9;
+    padding: 20px 5px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+.contactus_map>iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+/*********************************************************************
+               SHOP PAGE CSS
+/**********************************************************************/
+.shop_menu_header {
+    display: grid;
+    grid-template-columns: 42% 42%;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0em;
+}
+
+.shop_menu_search {
+    margin-left: auto;
+}
+
+
+.shop_menu_search>.search_bar {
+    border: none;
+    background-color: #f9f9f9;
+    padding: 10px 5px;
+}
+
+.shop_menu_search>.select_options {
+    border: none;
+    background-color: #f9f9f9;
+    padding: 10px 5px;
+}
+
+
+.best_selling_products_section>.best_selling_products {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.best_selling_products_section_heading {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.best_selling_products_images-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0px;
+    line-height: 23px;
+}
+
+.best_selling_products_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cart_button>a {
+    background-color: #1FA2FF;
+    color: white;
+}
+
+
+
+
+/*********************************************************************
+               PRIVACY POLICY PAGE CSS
+/**********************************************************************/
+.privacy_policy_section .privacy_policy_heading {
+    text-align: center;
+    margin: 50px 0px;
+    line-height: 50px;
+}
+
+.privacy_policy_heading>h4 {
+    color: #1FA2FF;
+    font-weight: 400;
+}
+
+.privacy_policy_text {
+    display: grid;
+    justify-content: center;
+    line-height: 50px;
+    margin: 40px 10px;
+}
+
+
+
+
+/*********************************************************************
+               TERMS AND CONDITIONS PAGE CSS
+/**********************************************************************/
+.Terms_and_conditions_section {
+    margin: 40px 0px;
+    /* text-align: center; */
+}
+
+.Terms_and_conditions_section>.Terms_and_conditions_section_heading {
+    text-align: center;
+    line-height: 40px;
+}
+
+.Terms_and_conditions_section_heading>h5 {
+    color: #1FA2FF;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.Terms_and_conditions_section_image>img {
+    /* width: 5%; */
+    margin: 30px 0px;
+}
+
+.Terms_and_conditions_section_texts {
+    display: grid;
+    justify-content: center;
+    line-height: 50px;
+    margin: 40px 10px;
+}
+
+
+
+/*********************************************************************
+               SIGN IN PAGE CSS
+/**********************************************************************/
+
+.Sign_in_form_section {
+    /* margin: 50px 0px; */
+    padding: 5em 0em;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    line-height: 50px;
+}
+
+.Sign_in {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 4em;
+}
+
+.Sign_in_form_heading {
+    text-align: center;
+}
+
+.Sign_in_form_heading>h4 {
+    color: #1FA2FF;
+    font-weight: 400;
+}
+
+.Sign_in_form_heading>h1 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.Sign_in_form .Sign_in_form_inputs>input {
+    width: 100%;
+    border: none;
+    background-color: #e7f6fe;
+    padding: 1em 0.5em;
+    margin: 10px 0px;
+
+}
+
+.Sign_in_form_checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Sign_in_form_button>button {
+    width: 100%;
+    background-color: #1FA2FF;
+    transition: all 0.3s ease-in-out;
+}
+
+.Sign_in_form_button>button:hover {
+    background-color: #000001;
+    cursor: pointer;
+}
+
+.Sign_in_form_button>button>a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.Sign_in_form>.Not_a_member_text {
+    text-align: center;
+}
